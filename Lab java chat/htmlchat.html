@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Chat Creativo</title>
+     <link rel="stylesheet" href="./Fondo lab.jpg">
+     <link rel="stylesheet" href="./csschat.css">
+ </head>
+<body>
+    <header class="header">
+        <h1>Lab 9 Chat </h1>
+    </header>
+    
+    <div class="person-selector" aria-label="Select Person">
+        <button class="button person-selector-button active-person" id="luis-selector" aria-pressed="true">
+            <i class="fas fa-user"></i> Luis
+        </button>
+        <button class="button person-selector-button" id="sofia-selector" aria-pressed="false">
+            <i class="fas fa-user"></i> Sofia
+        </button>
+    </div>
+    
+    <div class="chat-container">
+        <h2 class="chat-header" aria-live="polite">Luis chatting...</h2>
+        <div class="chat-messages" aria-live="polite" aria-atomic="true"></div>
+     
+        <form class="chat-input-form" aria-label="Send message form">
+            <input type="text" class="chat-input" required placeholder="Type here, Luis..." aria-label="Message input"/>
+            <button type="submit" class="button send-button">
+                <i class="fas fa-paper-plane"></i> Enviar
+            </button>
+        </form>
+        
+        <button class="button clear-chat-button">
+            <i class="fas fa-trash"></i> Eliminar Chat
+        </button>
+    </div>
+    
+    <script src="./javachat.js"></script>
+</body>
+</html>
